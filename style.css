@@ -76,9 +76,9 @@ h3.left-h3 {
 }
 
 .arrow {
-  background-image: url(img/arrow.png);
+  /* background-image: url(img/arrow.png); */
   background-repeat: no-repeat;
-  background-color: transparent;
+  background-color: red;
   width: 8px;
   height: 7px;
   float: right;
