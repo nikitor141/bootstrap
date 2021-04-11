@@ -8,12 +8,14 @@ html, body {
   box-sizing: border-box;
   transition: 0.3s;
 }
-body {
+.body {
   background-color: #223377;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100%;
 }
+
 .theme-switcher {
   position: fixed;
   width: 50px;
@@ -30,13 +32,16 @@ body {
 .theme-switcher:hover {
   background-image: url(img/moon.svg);
 }
-.theme-switcher:hover+form {
+.theme-switcher:hover+.body {
+  background-color: #00cc66;
+}
+.theme-switcher:hover+.body>form {
   background-color: #ddd;
 }
-.theme-switcher:hover+form>h1,.theme-switcher:hover+form>button {
+.theme-switcher:hover+.body>form>h1,.theme-switcher:hover+.body>form>button {
   color: black;
 }
-.theme-switcher:hover+form>input,.theme-switcher:hover+form>button {
+.theme-switcher:hover+.body>form>input,.theme-switcher:hover+.body>form>button {
   border-color: #0099ff;
 }
 form {
