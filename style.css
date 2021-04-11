@@ -2,10 +2,11 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: "Fira Mono", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 * {
   box-sizing: border-box;
+  transition: 0.3s;
 }
 body {
   background-color: #223377;
@@ -13,9 +14,35 @@ body {
   justify-content: center;
   align-items: center;
 }
+.theme-switcher {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  background-image: url(img/sun.svg);
+  background-repeat: no-repeat;
+  background-size: 45px;
+  background-position: center;
+  top: 0;
+  right: 0;
+  transition: 0.3s;
+}
+.theme-switcher:hover {
+  background-image: url(img/moon.svg);
+}
+.theme-switcher:hover+form {
+  background-color: #ddd;
+}
+.theme-switcher:hover+form>h1,.theme-switcher:hover+form>button {
+  color: black;
+}
+.theme-switcher:hover+form>input,.theme-switcher:hover+form>button {
+  border-color: #0099ff;
+}
 form {
   width: 500px;
   height: 490px;
+  border-radius: 35px;
   background-color: #222;
   display: flex;
   justify-content: space-evenly;
@@ -40,7 +67,7 @@ input {
 }
 input:hover,input:focus {
   width: 70%;
-  border-color: #0066cc;
+  border-color: #0099ff;
 }
 button:hover,button:focus {
   background-color: #00cc66;
