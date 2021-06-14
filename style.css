@@ -1,89 +1,44 @@
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  font-family: "Roboto", sans-serif;
-}
 * {
   box-sizing: border-box;
-  transition: 0.3s;
+  margin: 0;
+  padding: 0;
+  font-family: 'arial', sans-serif;
+  color: white;
+  text-align: center;
 }
-.body {
-  background-color: #223377;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+body,html {
   height: 100%;
-}
-
-.theme-switcher {
-  position: fixed;
-  width: 50px;
-  height: 50px;
-  margin: 10px;
-  background-image: url(img/sun.svg);
-  background-repeat: no-repeat;
-  background-size: 45px;
-  background-position: center;
-  top: 0;
-  right: 0;
-  transition: 0.3s;
-}
-.theme-switcher:hover {
-  background-image: url(img/moon.svg);
-}
-.theme-switcher:hover+.body {
-  background-color: #00cc66;
-}
-.theme-switcher:hover+.body>form {
-  background-color: #ddd;
-}
-.theme-switcher:hover+.body>form>h1,.theme-switcher:hover+.body>form>button {
-  color: black;
-}
-.theme-switcher:hover+.body>form>input,.theme-switcher:hover+.body>form>button {
-  border-color: #0099ff;
-}
-form {
-  width: 500px;
-  height: 490px;
-  border-radius: 35px;
-  background-color: #222;
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
-  align-items: center;
+  background-color: purple;
 }
 h1 {
-  color: white;
-  font-size: 50px;
+  font-size: 42px;
+  margin-bottom: 40px;
 }
-input {
-  background-color: transparent;
-  border: 2px solid #00cc66;
-  border-radius: 500px;
-  outline: 0;
-  color: #aaa;
-  width: 60%;
-  height: 40px;
-  font-size: 15px;
-  padding: 15px;
-  transition: 0.3s;
+.wrapper {
+  margin: 30px auto;
 }
-input:hover,input:focus {
-  width: 70%;
-  border-color: #0099ff;
+p {
+  font-size: 20px;
 }
-button:hover,button:focus {
-  background-color: #00cc66;
+.card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 25px;
+
 }
-button {
-  height: 40px;
-  width: 20%;
-  border: 2px solid #00cc66;
-  background-color: transparent;
-  font-size: 15px;
-  border-radius: 50px;
-  color: white;
-  transition: 0.3s;
+.link {
+  margin: 25px auto;
+  display: block;
+  width: 85%;
+  padding: 10px;
+  border: 2px solid red;
+  color: orange;
+}
+
+.h12 {
+  font-size: 30px;
+}
+.hearts {
+  color: red;
 }
