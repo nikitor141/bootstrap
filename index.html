@@ -3,19 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Любимой женщине</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="https://static.kulturologia.ru/files/u18046/heart-symbol-01.jpg">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="main.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="script.js"></script>
+  <title>Document</title>
 </head>
 <body>
-  <div class="wrapper">
-    <h1>Оксан, с днем рождения!</h1>
-    <p>Как ты заметила, тут все фиолетовое!</p>
-    <div class="card">
-      <span>А вот твои котики! --></span>
-      <img src="img/котики.jpg" width="50%" alt="Если ты это увидела, то у тебя не прогрузилась картинка, печально..((">
-    </div>
-    <a class="link" href="page2.html">Нажми на кнопочку!</a>
+<div class="card">
+  <div class="bg"></div>
+  <div class="box">
+    <input type="radio" id="purple" class="active" name="bg-switcher">
+    <label for="purple" id="label-purple"></label>
+    <input type="radio" id="blue" name="bg-switcher">
+    <label for="blue" id="label-blue"></label>
+    <input type="radio" id="green" name="bg-switcher">
+    <label for="green" id="label-green"></label>
+    <div class="active"></div>
   </div>
+</div>
 </body>
 </html>
